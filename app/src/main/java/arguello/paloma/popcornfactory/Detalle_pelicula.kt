@@ -6,13 +6,14 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class Detalle_pelicula : AppCompatActivity() {
-    val iv_pelicula_imagen: ImageView = findViewById(R.id.iv_pelicula_imagen)
-    val tv_nombre_pelicula: TextView = findViewById(R.id.tv_nombre_pelicula)
-    val tv_pelicula_desc: TextView = findViewById(R.id.tv_pelicula_desc)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalle_pelicula)
+        val iv_pelicula_imagen: ImageView = findViewById(R.id.iv_pelicula_imagen)
+        val tv_nombre_pelicula: TextView = findViewById(R.id.tv_nombre_pelicula)
+        val tv_pelicula_desc: TextView = findViewById(R.id.tv_pelicula_desc)
+
 
         val bundle=intent.extras
         if(bundle!=null){
